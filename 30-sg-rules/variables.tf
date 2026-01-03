@@ -1,20 +1,13 @@
-variable "project_name"{
+variable "project_name" {
     type = string
     default = "roboshop"
-}
-
-variable "environment" {
-
-    type = string 
-    default = "Dev"
   
 }
 
-/* variable "vpc_id" {
-    type = string
-
-} */
-
+variable "environment" {
+  type = string
+  default = "Dev"
+}
 
 variable "sg_names" {
     type = list 
@@ -27,8 +20,6 @@ variable "sg_names" {
         # bastion
         "bastion",
         # frontend load balancer
-        "frontend_alb",
-        #Backent ALB
-        "backend_alb" ]
+        "frontend_alb"]
+  
 }
-
